@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "datasource",
+  "name": "launchdarkly-annotations",
+  "id": "launchdarkly-annotations-datasource",
+  "metrics": true,
+  "annotations": true,
+  "info": {
+    "description": "Creates annotations for LaunchDarkly flag changes",
+    "author": {
+      "name": "Steffen Gebert",
+      "url": "https://www.emnify.com"
+    },
+    "keywords": [],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/EMnify/grafana-plugin-launchdarkly"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/EMnify/grafana-plugin-launchdarkly/blob/main/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=7.0.0",
+    "plugins": []
+  },
+  "routes": [
+    {
+      "path": "launchdarkly",
+      "url": "https://app.launchdarkly.com",
+      "headers": [
+        {
+          "name": "Authorization",
+          "content": "{{ .SecureJsonData.apiKey }}"
+        },
+        {
+          "name": "LD-API-Version",
+          "content": "20220603"
+        }
+      ]
+    }
+  ]
+}

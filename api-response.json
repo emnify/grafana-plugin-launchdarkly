@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "_links": {
+        "canonical": {
+          "href": "/api/v2/flags/my-project/flag-key",
+          "type": "application/json"
+        },
+        "parent": {
+          "href": "/api/v2/auditlog",
+          "type": "application/json"
+        },
+        "self": {
+          "href": "/api/v2/auditlog/636a567094ad0d115e28d39f",
+          "type": "application/json"
+        },
+        "site": {
+          "href": "/my-project/my-environment/features/flag-key",
+          "type": "text/html"
+        }
+      },
+      "_id": "636a567094ad0d115e28d39f",
+      "_accountId": "61fd3f4db1a10b952e0519f5",
+      "date": 1667913328896,
+      "accesses": [
+        {
+          "action": "updateRules",
+          "resource": "proj/my-project:env/my-environment;production:flag/flag-key;tag1"
+        }
+      ],
+      "kind": "flag",
+      "name": "My feature flag",
+      "description": "* Added the rule \n    > **If** `attribute` **is one of** `42`  \n    **serve** `whatever`\n    \n    \n",
+      "shortDescription": "",
+      "comment": "Changed this and that",
+      "member": {
+        "_links": {
+          "parent": {
+            "href": "/api/v2/members",
+            "type": "application/json"
+          },
+          "self": {
+            "href": "/api/v2/members/6283xxxx0233cc14e64e9a70",
+            "type": "application/json"
+          }
+        },
+        "_id": "12345abcd12345abcd12345abcd",
+        "email": "john.doe@example.com",
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "titleVerb": "updated the flag",
+      "title": "[John Doe](mailto:john.doe@example.com) updated the flag [My feature flag](https://app.launchdarkly.com/my-project/my-environment/features/flag-key) in `My Environment`",
+      "target": {
+        "_links": {
+          "canonical": {
+            "href": "/api/v2/flags/my-project/flag-key",
+            "type": "application/json"
+          },
+          "site": {
+            "href": "/my-project/my-environment/features/flag-key",
+            "type": "text/html"
+          }
+        },
+        "name": "My feature flag",
+        "resources": [
+          "proj/my-project:env/my-environment;production:flag/flag-key;tag1"
+        ]
+      },
+      "parent": {
+        "_links": {
+          "canonical": {
+            "href": "/api/v2/projects/my-project/environments/my-environment",
+            "type": "application/json"
+          },
+          "site": {
+            "href": "/settings/projects",
+            "type": "text/html"
+          }
+        },
+        "name": "My Production",
+        "resource": "proj/my-project:env/my-environment;production"
+      }
+    }
+  ],
+  "_links": {
+    "next": {
+      "href": "/api/v2/auditlog?after=1662847200000&before=1666172448029&limit=10&spec=proj%2F%2A%3Aenv%2F%2A%3Aflag%2F%2A%3Btag1",
+      "type": "application/json"
+    },
+    "self": {
+      "href": "/api/v2/auditlog?after=1662847200000&before=1668207599999&spec=proj%2F%2A%3Aenv%2F%2A%3Aflag%2F%2A%3Btag1",
+      "type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "emnify-launchdarkly-annotations",
+  "version": "0.0.1",
+  "description": "Creates annotations for LaunchDarkly flag changes",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch",
+    "sign": "grafana-toolkit plugin:sign",
+    "start": "yarn watch"
+  },
+  "author": "Steffen Gebert",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@grafana/toolkit": "latest",
+    "@types/lodash": "latest",
+    "@testing-library/jest-dom": "5.4.0",
+    "@testing-library/react": "^10.0.2"
+  },
+  "dependencies": {
+    "@grafana/data": "latest",
+    "@grafana/experimental": "latest",
+    "@grafana/ui": "latest",
+    "@grafana/runtime": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
