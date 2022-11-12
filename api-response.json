@@ -63,9 +63,7 @@
           }
         },
         "name": "My feature flag",
-        "resources": [
-          "proj/my-project:env/my-environment;production:flag/flag-key;tag1"
-        ]
+        "resources": ["proj/my-project:env/my-environment;production:flag/flag-key;tag1"]
       },
       "parent": {
         "_links": {

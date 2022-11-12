@@ -10,19 +10,19 @@ import { LDQuery } from '../types';
 export type Props = QueryEditorProps<LDDataSource, LDQuery>;
 
 export const LDAnnotationQueryEditor = (props: Props) => {
-    const { query, onChange } = props;
+  const { query, onChange } = props;
 
-    return (
-        <>
-            <EditorRow>
-                <EditorField label="Tag" width={26} tooltip="Limit flags to specific tag">
-                    <Input
-                        value={query.tag || ''}
-                        placeholder="*"
-                        onChange={(event: ChangeEvent<HTMLInputElement>) => onChange({ ...query, tag: event.target.value })}
-                    />
-                </EditorField>
-            </EditorRow>
-        </>
-    );
+  return (
+    <>
+      <EditorRow>
+        <EditorField label="Tag" width={26} tooltip="Limit flags to specific tag">
+          <Input
+            value={query.tag || ''}
+            placeholder="*"
+            onChange={(event: ChangeEvent<HTMLInputElement>) => onChange({ ...query, tag: event.target.value })}
+          />
+        </EditorField>
+      </EditorRow>
+    </>
+  );
 };

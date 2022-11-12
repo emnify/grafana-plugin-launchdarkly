@@ -2,7 +2,6 @@
 
 A Grafana Data Source Plugin for displaying LaunchDarkly flag changes as annotations.
 
-
 ## Project Status
 
 ⚠️ This is a slack time project and we are not yet clear about the feature of this.
@@ -11,7 +10,7 @@ A Grafana Data Source Plugin for displaying LaunchDarkly flag changes as annotat
 
 Relevant for EMnify:
 
-- allow to specify multiple tags with _OR_ conjunction. Currently, specifying `tag1,tag2` will require that a flag is tagged with both tags, not one or the other. This is a limitation in the LD API. 
+- allow to specify multiple tags with _OR_ conjunction. Currently, specifying `tag1,tag2` will require that a flag is tagged with both tags, not one or the other. This is a limitation in the LD API.
 - Query audit log for segment changes
 - understand defaultQuery (tutorial vs. other plugins)
 

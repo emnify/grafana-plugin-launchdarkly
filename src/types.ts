@@ -1,17 +1,17 @@
 import { DataQuery, DataSourceJsonData } from '@grafana/data';
 
 export interface LDQuery extends DataQuery {
-  project: string,
-  environment: string,
-  flag: string,
-  tag: string,
+  project: string;
+  environment: string;
+  flag: string;
+  tag: string;
 }
 
 export const defaultQuery: Partial<LDQuery> = {
-  project: "*",
-  environment: "*",
-  flag: "*",
-  tag: "*",
+  project: '*',
+  environment: '*',
+  flag: '*',
+  tag: '*',
 };
 
 /**
