@@ -1,6 +1,6 @@
 {
   "name": "emnify-launchdarkly-annotations",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Creates annotations for LaunchDarkly flag changes",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
