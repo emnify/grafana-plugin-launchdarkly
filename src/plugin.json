@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
   "type": "datasource",
   "name": "launchdarkly-annotations",
-  "id": "launchdarkly-annotations-datasource",
+  "id": "emnify-launchdarkly-datasource",
   "metrics": true,
   "annotations": true,
   "info": {
